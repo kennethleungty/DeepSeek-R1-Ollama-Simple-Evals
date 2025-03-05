@@ -1,0 +1,57 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: '.*\.ipynb$'
+      - id: end-of-file-fixer
+        exclude: docs/badges
+      - id: check-added-large-files
+        args: ['--maxkb=100000'] # allow up to 100MB
+        exclude: examples
+      - id: check-json
+      - id: check-yaml
+      - id: check-merge-conflict
+      - id: mixed-line-ending
+        args: ['--fix=lf']
+      - id: check-toml
+
+  - repo: local
+    hooks:
+      - id: sql_formatter
+        name: SQL formatter
+        language: python
+        entry: sql-formatter --max-line-length=120
+        files: \.sql$
+        additional_dependencies: [sql-formatter]
+
+  # - repo: https://github.com/kynan/nbstripout
+  #   rev: 0.7.1
+  #   hooks:
+  #     - id: nbstripout
+
+  - repo: https://github.com/psf/black
+    rev: 24.8.0
+    hooks:
+      - id: black
+        language_version: python3
+
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.6.7
+    hooks:
+      - id: ruff
+        args: ["--line-length=120", "--fix"]
+        exclude: '.*\.ipynb$'
+
+  # - repo: https://github.com/Yelp/detect-secrets
+  #   rev: v1.5.0
+  #   hooks:
+  #   -   id: detect-secrets
+  #       exclude: '(.*\.dvc$|.*\.ipynb$|.*\.log$)'
+
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        name: isort (python)
+        args: ["--profile", "black"]
