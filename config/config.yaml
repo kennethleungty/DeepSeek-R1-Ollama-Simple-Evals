@@ -1,1 +1,4 @@
 MODEL_NAME: "deepseek-r1:1.5b"  # deepseek-r1:7b or deepseek-r1:1.5b
+GPQA_VARIANT: "diamond"
+EVAL_N_REPEATS: 1
+EVAL_N_EXAMPLES: 8
