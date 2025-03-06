@@ -1,4 +1,0 @@
-[submodule "simple-evals"]
-	path = simple-evals
-	url = https://github.com/openai/simple-evals.git
-	ignore = dirty
