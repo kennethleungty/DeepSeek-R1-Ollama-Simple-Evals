@@ -1,2 +1,7 @@
-ollama==0.4.7
-git+https://github.com/openai/simple-evals.git
+Jinja2>=3.1.6
+ollama>=0.4.7
+openai>=1.65.4
+pandas>=2.2.3
+PyYAML>=6.0.2
+requests>=2.32.3
+tqdm>=4.67.1

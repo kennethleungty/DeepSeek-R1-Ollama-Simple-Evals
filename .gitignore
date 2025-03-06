@@ -135,7 +135,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-venv_deepseek_ollama_deepeval
+venv_deepseek_ollama
 
 # Spyder project settings
 .spyderproject
