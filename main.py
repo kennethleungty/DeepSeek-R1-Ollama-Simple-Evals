@@ -1,10 +1,15 @@
 import time
 
+from dotenv import load_dotenv
+
 from simple_evals.gpqa_eval import GPQAEval
 from simple_evals.math_eval import MathEval
 from simple_evals.sampler.chat_completion_sampler import ChatCompletionSampler
 from utils.samplers.ollama_sampler import OllamaSampler
 from utils.utils import load_config
+
+# Load env variables
+load_dotenv()
 
 
 def run_eval():
