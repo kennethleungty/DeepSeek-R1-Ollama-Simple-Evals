@@ -1,6 +1,6 @@
-MODEL_NAME: "deepseek-r1:1.5b"  # deepseek-r1:7b or deepseek-r1:1.5b
+MODEL_NAME: "deepseek-r1:7b"  # deepseek-r1:7b or deepseek-r1:1.5b
 EVAL_BENCHMARK: "math"  # e.g., "gpqa", "math"
 GPQA_VARIANT: "diamond"
 MATH_VARIANT: "math_500_test"
-EVAL_N_REPEATS: 1
+EVAL_N_REPEATS: 2
 EVAL_N_EXAMPLES: 5
