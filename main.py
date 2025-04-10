@@ -57,8 +57,8 @@ def run_eval():
     # and aggregated metrics
     print(">>>> Overall Evaluation Metrics:")
     print(results.metrics)
-    # print(">>>> Full results")
-    # print(results)
+    print(">>>> Score:")
+    print(results.score)
     print(f">>>> Total Execution Time: {int(minutes)} min {seconds:.2f} sec")
 
 
