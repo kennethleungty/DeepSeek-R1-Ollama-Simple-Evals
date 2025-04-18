@@ -3,4 +3,4 @@ EVAL_BENCHMARK: "gpqa"  # e.g., "gpqa", "math"
 GPQA_VARIANT: "diamond"
 MATH_VARIANT: "math_500_test"
 EVAL_N_REPEATS: 1
-EVAL_N_EXAMPLES: 6
+EVAL_N_EXAMPLES: 20

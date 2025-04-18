@@ -11,7 +11,7 @@ class OllamaSampler:
             model=self.model_name, messages=[{"role": "user", "content": prompt_text}]
         )
         response_content = response["message"]["content"]
-        print('[OllamaSampler] Response:', response_content)
+
         return response_content
 
     def _pack_message(self, content, role):

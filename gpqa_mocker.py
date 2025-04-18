@@ -44,10 +44,10 @@ if __name__ == "__main__":
         print(f"--- Evaluator initialized with {actual_examples_loaded} examples ---")
 
         # --- Create Mock Samplers ---
-        mock_sampler_a = MockSampler(fixed_response="Answer: A")
-        mock_sampler_b = MockSampler(fixed_response="Answer: B")
-        mock_sampler_c = MockSampler(fixed_response="Answer: C")
-        mock_sampler_d = MockSampler(fixed_response="Answer: D")
+        mock_sampler_a = MockSampler(fixed_response="ANSWER:A")
+        mock_sampler_b = MockSampler(fixed_response="ANSWER:B")
+        mock_sampler_c = MockSampler(fixed_response="ANSWER:C")
+        mock_sampler_d = MockSampler(fixed_response="ANSWER:D")
         mock_sampler_malformed = MockSampler(fixed_response="Maybe B? Not sure.")
 
         # --- Run Tests on the Same Multi-Example Set ---
