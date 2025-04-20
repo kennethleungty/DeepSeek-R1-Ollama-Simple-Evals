@@ -1,4 +1,5 @@
 MODEL_NAME: "deepseek-r1:14b"  # deepseek-r1:7b or deepseek-r1:14b
+MODEL_TEMPERATURE: 0.6
 EVAL_BENCHMARK: "gpqa"  # e.g., "gpqa", "math"
 GPQA_VARIANT: "diamond"
 MATH_VARIANT: "math_500_test"

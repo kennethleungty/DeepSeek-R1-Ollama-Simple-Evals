@@ -17,7 +17,8 @@ def run_eval():
     config = load_config("config/config.yaml")
 
     # Initialize Ollama sampler (wrapper around Ollama chat)
-    ollama_sampler = OllamaSampler(model_name=config["MODEL_NAME"])
+    ollama_sampler = OllamaSampler(model_name=config["MODEL_NAME"],
+                                   temperature=config["MODEL_TEMPERATURE"])
 
     # Choose which evaluation class to use based on EVAL_BENCHMARK
     eval_benchmark = config["EVAL_BENCHMARK"]
