@@ -1,3 +1,8 @@
+# ==================================
+# This script is intended for testing purposes, designed to mock the behavior of a sampler used in GPQA evaluation process.
+# It provides a simple way to simulate responses from a model without needing to call the actual model.
+# The MockSampler class is initialized with a fixed response and will always return that response when called.
+# ==================================
 from dataclasses import dataclass, field
 from typing import Any, Dict, List
 
